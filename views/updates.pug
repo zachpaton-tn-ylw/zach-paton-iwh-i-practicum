@@ -1,0 +1,23 @@
+html
+    head
+        title= title
+    body
+        h1 Add a New Oilers Player
+        a(href='/') Return to the homepage
+        br
+        br
+        form(action='/update-cobj' method='POST')
+            label Name:
+            br
+            input(type='text' name='name')
+            br
+            label Position:
+            br
+            input(type='text' name='position')
+            br
+            label Jersey Number:
+            br
+            input(type='text' name='jersey_number')
+            br
+            br
+            button(type='submit') Add Player
