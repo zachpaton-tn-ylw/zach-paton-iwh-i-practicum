@@ -1,0 +1,18 @@
+html
+    head
+        title= title
+    body
+        h1 Edmonton Oilers Players
+        a(href='/update-cobj') Add to this table
+        table
+            thead
+                tr
+                    th Name
+                    th Position
+                    th Jersey Number
+            tbody
+                each player in data
+                    tr
+                        td= player.properties.name
+                        td= player.properties.position
+                        td= player.properties.jersey_number
